@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:layout_marginBottom="30pt"
+        android:gravity="bottom|center">
+
+        <ImageView
+            android:id="@+id/weatherIv"
+            android:src="@drawable/sunny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="358dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/skyValueTv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="맑음"
+                    android:textColor="#263238"
+                    android:textSize="10pt" />
+
+
+                <TextView
+                    android:id="@+id/dropTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="비 없음"
+                    android:textColor="#263238"
+                    android:textSize="10pt" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="162dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rainTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="강수 확률"
+                    android:textColor="#263238"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/rainValueTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textColor="#263238"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/minTv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="최저 기온"
+                    android:textColor="#263238"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/minValueTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="5ºC"
+                    android:textColor="#263238"
+                    android:textSize="8pt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/maxTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="최고 기온"
+                    android:textColor="#263238"
+                    android:textSize="8pt" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/maxValueTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:text="14ºC"
+                    android:textColor="#263238"
+                    android:textSize="8pt" />
+            </LinearLayout>
+            <!--<TextView-->
+            <!--android:id="@+id/gps"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="값"-->
+            <!--android:textColor="#424242"-->
+            <!--android:textSize="8pt" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="334dp"
+            android:layout_height="30pt"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="10pt"
+            android:background="#546E7A"
+            android:text="알람 종료"
+            android:textColor="#ffffff"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
